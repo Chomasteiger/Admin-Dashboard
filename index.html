@@ -1,192 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container roboto-regular">
-    <div class="header">
-      <div class="search">
-        <label for="search-input"><div class="icon icon-magnify"></div></label>
-        <input type="search" id="search-input" name="searchinput">
-      </div>
-      <div class="user-options">
-        <button><span class="icon icon-bell"></span></button>
-        <span class="icon icon-user-small"></span>
-        <span>Morgan Oakley</span>
-      </div>
-      <div class="user-info">
-        <span class="icon icon-user-big"></span>
-        <div class="user-greeting">
-          <span class="greeting">Hi there,</span>
-          <span class="user-handle">Morgan Oakley (@morgan)</span>
-        </div>
-      </div>
-      <div class="projects-control">
-        <ul>
-          <li>
-            <button>New</button>
-          </li>
-          <li>
-            <button>Upload</button>
-          </li>
-          <li>
-            <button>Share</button>
-          </li>
-        </ul>
-      </div>
+    
+    <div class="project-container">
+        <header>
+            <div class="search-icon-container">
+                <img class="search-icon" src="./assets/magnify.svg" alt="search-icon">
+                <input class="input" type="search">
+                <img class="bell" src="./assets/bell-ring.svg" alt="bell">
+                <img class="user-icon" src="./assets/logo-icon.jpg" alt="user-icon">
+                <p>Morgan Oakley</p>
+            </div>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./assets/logo-icon.jpg" alt="user-icon-big">
+                </div>
+                <div class="user-id">
+                    <p>Hi there,</p>
+                    <h2>Morgan Oakley (@morgan)</h2>
+                </div>
+                <div class="user-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="dashboard">
+                <img src="./assets/dashboard.jpg" alt="dashboard-icon">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="menu-container1">
+
+                <div class="home-icon">
+                    <img src="./assets/home.svg" alt="home">
+                </div>
+                <p class="home">Home</p>
+
+                <div class="profile-icon">
+                    <img src="./assets/card-account-details-outline.svg" alt="Profile"> 
+                </div>
+                <p class="profile">Profile</p>
+
+                <div class="messages-icon">
+                    <img src="./assets/message-reply.svg" alt="Messages">
+                </div>
+                <p class="messages">Messages</p>
+
+                <div class="history-icon">
+                    <img src="./assets/history.svg" alt="History">
+                </div>
+                <p class="history ">History</p>
+
+                <div class="task-icon">
+                    <img src="./assets/note-multiple.svg" alt="Tasks">
+                </div>
+                <p class="task">Tasks</p>
+
+                <div class="communities-icon">
+                    <img src="./assets/account-group.svg" alt="Communities">
+                </div>
+                <p class="communities">Communities</p>
+            </div>   
+            <div class="menu-container2">
+
+                <div class="settings-icon">
+                    <img src="./assets/cog.svg" alt="settings">
+                </div>
+                <p class="settings">Settings</p>
+
+                <div class="support-icon">
+                    <img src="./assets/face-agent.svg" alt="support">
+                </div>
+                <p class="support">Support</p>
+
+                <div class="privacy-icon">
+                    <img src="./assets/shield-check.svg" alt="privacy">
+                </div>
+                <p class="privacy">Privacy</p>
+            </div>
+        </aside>
+
+        <main>
+            <div class="projects">
+                <p class="projects-title">Your Projects</p>
+                <div class="boxes">
+                    <div class="box1 yellow">
+                        <p class="title">Super Cool Project</p>
+                        <p class="description">Sed tempus ut lacus ut scelerisque. Suspendisse sollcitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        <img class="star" src="./assets/star-plus-outline.svg" alt="star">
+                        <img class="eye" src="./assets/eye-plus-outline.svg" alt="eye">
+                        <img class="share" src="./assets/share-variant-outline.svg" alt="share">
+                    </div>
+                    <div class="box2 yellow">
+                        <p class="title">Less Cool Project</p>
+                        <p class="description">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        <img class="star" src="./assets/star-plus-outline.svg" alt="star">
+                        <img class="eye" src="./assets/eye-plus-outline.svg" alt="eye">
+                        <img class="share" src="./assets/share-variant-outline.svg" alt="share">
+                    </div>
+                    <div class="box3 yellow">
+                        <p class="title">Impossible App</p>
+                        <p class="description">In hac habitasse platea dictumst. Vivamus dictum rutrum acru, a placerat velit sagttis id.</p>
+                        <img class="star" src="./assets/star-plus-outline.svg" alt="star">
+                        <img class="eye" src="./assets/eye-plus-outline.svg" alt="eye">
+                        <img class="share" src="./assets/share-variant-outline.svg" alt="share">
+                    </div>
+                    <div class="box4 yellow">
+                        <p class="title">Easy Peasy App</p>
+                        <p class="description">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                        <img class="star" src="./assets/star-plus-outline.svg" alt="star">
+                        <img class="eye" src="./assets/eye-plus-outline.svg" alt="eye">
+                        <img class="share" src="./assets/share-variant-outline.svg" alt="share">
+                    </div>
+                    <div class="box5 yellow">
+                        <p class="title">Ad Blocker</p>
+                        <p class="description">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        <img class="star" src="./assets/star-plus-outline.svg" alt="star">
+                        <img class="eye" src="./assets/eye-plus-outline.svg" alt="eye">
+                        <img class="share" src="./assets/share-variant-outline.svg" alt="share">
+                    </div>
+                    <div class="box6 yellow">
+                        <p class="title">Money Maker</p>
+                        <p class="description">Praesent convallis, libero quis conque elementum, nunc ante faucibus sapien, ac scelerisque totor purus sit amet ex. pellentesque mollis nec sem vel aliquam.</p>
+                        <img class="star" src="./assets/star-plus-outline.svg" alt="star">
+                        <img class="eye" src="./assets/eye-plus-outline.svg" alt="eye">
+                        <img class="share" src="./assets/share-variant-outline.svg" alt="share">
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcements">
+                <div class="announcements-container">
+                    <div class="announcement-1">
+                        <p class="header">Site Maintenance</p>
+                        <p class="content">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                    </div>
+                    <div class="announcement-2">
+                        <p class="header">Community Share Day</p>
+                        <p class="content">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                    </div>
+                    <div class="announcement-3">
+                        <p class="header">Updated Privacy Policy</p>
+                        <p class="content">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagttis sem in mattis...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending">
+
+            </div>
+        </main>
     </div>
-    <div class="sidebar">
-      <div class="logo">
-        <span class="icon icon-dash"></span>
-        <h2>Dashboard</h2>
-      </div>
-      <ul class="pages-navigation">
-        <li><span class="icon icon-home"></span>Home</li>
-        <li><span class="icon icon-card"></span>Profile</li>
-        <li><span class="icon icon-message"></span>Messages</li>
-        <li><span class="icon icon-clock"></span>History</li>
-        <li><span class="icon icon-file"></span>Tasks</li>
-        <li><span class="icon icon-group"></span>Communities</li>
-      </ul>
-      <ul class="pages-settings">
-        <li><span class="icon icon-cog"></span>Settings</li>
-        <li><span class="icon icon-help"></span>Support</li>
-        <li><span class="icon icon-shield"></span>Privacy</li>
-      </ul>
-    </div>
-    <div class="dash-container">
-      <div class="article">
-        <h2>Your Projects</h2>
-        <div class="projects">
-          <div class="card">
-            <div class="description">
-              <h3>Super Cool Project</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo consequuntur eos sed necessitatibus, recusandae vero saepe.</p>
-            </div>
-            <div class="card-controls">
-              <button><span class="icon icon-star"></span></button>
-              <button><span class="icon icon-eye"></span></button>
-              <button><span class="icon icon-fork"></span></button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="description">
-              <h3>Less Cool Project</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint laborum laudantium, placeat aliquid earum tempore dignissimos explicabo minima pariatur possimus nulla commodi quos corporis sequi voluptate.</p>
-            </div>
-            <div class="card-controls">
-              <button><span class="icon icon-star"></span></button>
-              <button><span class="icon icon-eye"></span></button>
-              <button><span class="icon icon-fork"></span></button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="description">
-              <h3>Impossible App</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium rem totam consectetur assumenda blanditiis culpa iure nesciunt ducimus aliquam voluptatum dolorum eligendi, eveniet nobis at consequuntur! Omnis.</p>
-            </div>
-            <div class="card-controls">
-              <button><span class="icon icon-star"></span></button>
-              <button><span class="icon icon-eye"></span></button>
-              <button><span class="icon icon-fork"></span></button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="description">
-              <h3>Easy Peasy App</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, esse suscipit aut assumenda reiciendis odit maiores soluta illum sunt quam repellat in unde quibusdam eos minus deleniti tenetur.</p>
-            </div>
-            <div class="card-controls">
-              <button><span class="icon icon-star"></span></button>
-              <button><span class="icon icon-eye"></span></button>
-              <button><span class="icon icon-fork"></span></button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="description">
-              <h3>Ad Blocker</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ullam saepe quidem quam provident, facilis quo reprehenderit nobis eaque dolorem dignissimos voluptatem libero voluptas exercitationem rerum.</p>
-            </div>
-            <div class="card-controls">
-              <button><span class="icon icon-star"></span></button>
-              <button><span class="icon icon-eye"></span></button>
-              <button><span class="icon icon-fork"></span></button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="description">
-              <h3>Money Maker</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi harum, ad quaerat quae aut perferendis perspiciatis aperiam ullam non, quas sapiente aliquam? Eligendi rem commodi, iusto voluptate.</p>
-            </div>
-            <div class="card-controls">
-              <button><span class="icon icon-star"></span></button>
-              <button><span class="icon icon-eye"></span></button>
-              <button><span class="icon icon-fork"></span></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="notification">
-        <h2>Announcements</h2>
-        <ul>
-          <li>
-            <h3>Site Maintenance</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam voluptatibus inventore exercitationem ic praesentium.</p>
-          </li>
-          <li class="division"></li>
-          <li>
-            <h3>Community Share Day</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vero officiis eos maiores error bus rerum.
-            </p>
-          </li>
-          <li class="division"></li>
-          <li>
-            <h3>Updated Privacy Policy</h3>
-            <p>cing elit. Mollitia, natus dolorem! Odio libero aliquid mollitia.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="trending">
-        <h2>Trending</h2>
-        <ul>
-          <li>
-            <span class="icon icon-user-small"></span>
-            <div>
-              <p>@tegan</p>
-              <p>World Peace Builder</p>
-            </div>
-          </li>
-          <li>
-            <span class="icon icon-user-small"></span>
-            <div>
-              <p>@morgan</p>
-              <p>Super Cool Project</p>
-            </div>
-          </li>
-          <li>
-            <span class="icon icon-user-small"></span>
-            <div>
-              <p>@kendall</p>
-              <p>Life Changing App</p>
-            </div>
-          </li>
-          <li>
-            <span class="icon icon-user-small"></span>
-            <div>
-              <p>@alex</p>
-              <p>No traffic Maker</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
